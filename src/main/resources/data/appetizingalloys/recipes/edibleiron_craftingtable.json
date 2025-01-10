@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "III",
+    "I0I",
+    "III"
+  ],
+  "key": {
+    "I": {
+      "item": "minecraft:iron_ingot"
+    },
+    "0": {
+      "item": "appetizingalloys:foodgem"
+    }
+  },
+  "result": {
+    "item": "appetizingalloys:edibleiron",
+    "count": 4
+
+  }
+}

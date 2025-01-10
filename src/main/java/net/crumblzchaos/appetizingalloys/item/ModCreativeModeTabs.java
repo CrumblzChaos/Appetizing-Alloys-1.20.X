@@ -1,6 +1,7 @@
 package net.crumblzchaos.appetizingalloys.item;
 
 import net.crumblzchaos.appetizingalloys.AppetizingAlloys;
+import net.crumblzchaos.appetizingalloys.block.ModBlocks;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
@@ -17,7 +18,9 @@ public class ModCreativeModeTabs {
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.FOODGEM.get()))
                     .title(Component.translatable("creativetab.inedible_nonalloys"))
                     .displayItems((pParameters, pOutput) -> {
+                        //rest of this is putting items in the tabs
                         pOutput.accept(ModItems.FOODGEM.get());
+                        pOutput.accept(ModBlocks.ROSEGOLD_BLOCK.get());
                     })
                     .build());
 
@@ -25,7 +28,10 @@ public class ModCreativeModeTabs {
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.EDIBLEIRON.get()))
                     .title(Component.translatable("creativetab.edible_alloys"))
                     .displayItems((pParameters, pOutput) -> {
+                        //ditto the other one
                         pOutput.accept(ModItems.EDIBLEIRON.get());
+                        pOutput.accept(ModItems.EDIBLEGOLD.get());
+                        pOutput.accept(ModItems.EDIBLECOPPER.get());
                     })
                     .build());
 

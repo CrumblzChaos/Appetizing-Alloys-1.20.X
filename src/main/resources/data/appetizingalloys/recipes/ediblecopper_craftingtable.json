@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "CCC",
+    "C0C",
+    "CCC"
+  ],
+  "key": {
+    "C": {
+      "item": "minecraft:copper_ingot"
+    },
+    "0": {
+      "item": "appetizingalloys:foodgem"
+    }
+  },
+  "result": {
+    "item": "appetizingalloys:ediblecopper",
+    "count": 4
+
+  }
+}

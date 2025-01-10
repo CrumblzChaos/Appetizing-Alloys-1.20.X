@@ -1,6 +1,7 @@
 package net.crumblzchaos.appetizingalloys;
 
 import com.mojang.logging.LogUtils;
+import net.crumblzchaos.appetizingalloys.block.ModBlocks;
 import net.crumblzchaos.appetizingalloys.item.ModCreativeModeTabs;
 import net.crumblzchaos.appetizingalloys.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -31,9 +32,12 @@ public class AppetizingAlloys
     {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
+        //this registers the creative tabs
         ModCreativeModeTabs.register(modEventBus);
-
+        //this registers the mod items
         ModItems.register(modEventBus);
+        //this registers the mod blocks
+        ModBlocks.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 

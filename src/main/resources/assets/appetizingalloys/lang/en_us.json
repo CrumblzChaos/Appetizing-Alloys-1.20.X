@@ -1,6 +1,9 @@
 {
   "item.appetizingalloys.foodgem": "Gem of Edibility",
   "item.appetizingalloys.edibleiron": "Edible Iron",
+  "item.appetizingalloys.ediblegold": "Edible Gold",
+  "item.appetizingalloys.ediblecopper": "Edible Copper",
+  "block.appetizingalloys.rosegold_block": "Block of Rose Gold",
 
   "creativetab.inedible_nonalloys": "Inedible Nonalloys",
   "creativetab.edible_alloys": "Edible Alloys"
