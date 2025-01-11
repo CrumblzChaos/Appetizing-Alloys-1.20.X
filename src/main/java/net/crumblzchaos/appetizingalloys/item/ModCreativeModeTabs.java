@@ -14,13 +14,14 @@ public class ModCreativeModeTabs {
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS =
             DeferredRegister.create(Registries.CREATIVE_MODE_TAB, AppetizingAlloys.MODID);
 
-    public static final RegistryObject<CreativeModeTab> INEDIBLE_NONALLOYS = CREATIVE_MODE_TABS.register("inedible_nonalloys",
+    public static final RegistryObject<CreativeModeTab> INEDIBLE_ALLOYS = CREATIVE_MODE_TABS.register("inedible_nonalloys",
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.FOODGEM.get()))
                     .title(Component.translatable("creativetab.inedible_nonalloys"))
                     .displayItems((pParameters, pOutput) -> {
                         //rest of this is putting items in the tabs
                         pOutput.accept(ModItems.FOODGEM.get());
                         pOutput.accept(ModBlocks.ROSEGOLD_BLOCK.get());
+                        pOutput.accept(ModItems.ROSEGOLD.get());
                     })
                     .build());
 

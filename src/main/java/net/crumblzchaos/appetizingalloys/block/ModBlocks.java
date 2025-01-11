@@ -22,7 +22,7 @@ public class ModBlocks {
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.GOLD_BLOCK)));
 
     public static final RegistryObject<Block> METALLICINFUSER = registerBlock("metallicinfuser",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.GOLD_BLOCK)));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.GOLD_BLOCK).noOcclusion()));
 
     //This part basically just creates the block item
     private static <T extends  Block>RegistryObject<Item> registerBlockItem(String name, RegistryObject<T> Block) {

@@ -4,6 +4,7 @@ import com.mojang.logging.LogUtils;
 import net.crumblzchaos.appetizingalloys.block.ModBlocks;
 import net.crumblzchaos.appetizingalloys.item.ModCreativeModeTabs;
 import net.crumblzchaos.appetizingalloys.item.ModItems;
+import net.crumblzchaos.appetizingalloys.loot.ModLootModifiers;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -38,6 +39,8 @@ public class AppetizingAlloys
         ModItems.register(modEventBus);
         //this registers the mod blocks
         ModBlocks.register(modEventBus);
+        //this registers the loot modifiers
+        ModLootModifiers.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
